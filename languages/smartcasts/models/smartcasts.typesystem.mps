@@ -31,6 +31,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -41,6 +44,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -73,8 +77,15 @@
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
+      </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -193,6 +204,38 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="5rfTprU1YZp">
+    <property role="TrG5h" value="check_SmartCastedVariableReference" />
+    <node concept="3clFbS" id="5rfTprU1YZq" role="18ibNy">
+      <node concept="3clFbJ" id="5rfTprU1Z8N" role="3cqZAp">
+        <node concept="3clFbC" id="5rfTprU20zI" role="3clFbw">
+          <node concept="10Nm6u" id="5rfTprU20Eb" role="3uHU7w" />
+          <node concept="2OqwBi" id="5rfTprU1ZlT" role="3uHU7B">
+            <node concept="1YBJjd" id="5rfTprU1Z8Z" role="2Oq$k0">
+              <ref role="1YBMHb" node="5rfTprU1Z8E" resolve="smartCastedVariableReference" />
+            </node>
+            <node concept="2qgKlT" id="5rfTprU20iF" role="2OqNvi">
+              <ref role="37wK5l" to="bjcj:5rfTprTR5lf" resolve="getType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5rfTprU1Z8P" role="3clFbx">
+          <node concept="2MkqsV" id="5rfTprU20ED" role="3cqZAp">
+            <node concept="Xl_RD" id="5rfTprU20EP" role="2MkJ7o">
+              <property role="Xl_RC" value="Variable cannot be smartly casted" />
+            </node>
+            <node concept="1YBJjd" id="5rfTprU20F$" role="1urrMF">
+              <ref role="1YBMHb" node="5rfTprU1Z8E" resolve="smartCastedVariableReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5rfTprU1Z8E" role="1YuTPh">
+      <property role="TrG5h" value="smartCastedVariableReference" />
+      <ref role="1YaFvo" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     </node>
   </node>
 </model>

@@ -43,6 +43,10 @@
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
         <property id="1225456424731" name="value" index="1iTho6" />
       </concept>
+      <concept id="7597241200646296619" name="jetbrains.mps.lang.editor.structure.QueryFunction_SNode" flags="in" index="3k4GqP" />
+      <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
+        <child id="7597241200646296618" name="functionNode" index="3k4GqO" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -140,6 +144,20 @@
                   </node>
                   <node concept="2qgKlT" id="5rfTprTZ9A2" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3k4GqR" id="5rfTprU3p0q" role="3F10Kt">
+          <node concept="3k4GqP" id="5rfTprU3p0r" role="3k4GqO">
+            <node concept="3clFbS" id="5rfTprU3p0s" role="2VODD2">
+              <node concept="3clFbF" id="5rfTprU3unu" role="3cqZAp">
+                <node concept="2OqwBi" id="5rfTprU3uzZ" role="3clFbG">
+                  <node concept="pncrf" id="5rfTprU3unt" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="5rfTprU3v92" role="2OqNvi">
+                    <ref role="37wK5l" to="bjcj:5rfTprU3q6v" resolve="nodeThatDefinesType" />
                   </node>
                 </node>
               </node>
