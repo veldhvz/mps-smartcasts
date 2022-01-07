@@ -169,8 +169,8 @@
                 <node concept="3Tqbb2" id="5CeOzIjCLgC" role="3rvQeY">
                   <ref role="ehGHo" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
                 </node>
-                <node concept="3Tqbb2" id="5CeOzIjCMwH" role="3rvSg0">
-                  <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+                <node concept="3uibUv" id="5rfTprUaspk" role="3rvSg0">
+                  <ref role="3uigEE" to="534n:5rfTprU03us" resolve="TypeCheckState" />
                 </node>
               </node>
             </node>
