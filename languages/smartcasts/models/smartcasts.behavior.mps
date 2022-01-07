@@ -409,33 +409,17 @@
             </node>
             <node concept="3clFbJ" id="5rfTprTSGyG" role="3cqZAp">
               <node concept="3clFbS" id="5rfTprTSGyH" role="3clFbx">
-                <node concept="3cpWs8" id="5rfTprTSGyI" role="3cqZAp">
-                  <node concept="3cpWsn" id="5rfTprTSGyJ" role="3cpWs9">
-                    <property role="TrG5h" value="typemap" />
-                    <node concept="3rvAFt" id="5rfTprTSGyK" role="1tU5fm">
-                      <node concept="3Tqbb2" id="5rfTprTSGyL" role="3rvQeY">
-                        <ref role="ehGHo" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
-                      </node>
-                      <node concept="3uibUv" id="5rfTprU2CrZ" role="3rvSg0">
-                        <ref role="3uigEE" to="534n:5rfTprU03us" resolve="TypeCheckState" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="5rfTprTSGyN" role="33vP2m">
-                      <node concept="37vLTw" id="5rfTprTSGyO" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5rfTprTSGys" resolve="typechecks" />
-                      </node>
-                      <node concept="liA8E" id="5rfTprTSGyP" role="2OqNvi">
-                        <ref role="37wK5l" to="1fjm:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction)" resolve="get" />
-                        <node concept="37vLTw" id="5rfTprTSGyQ" role="37wK5m">
-                          <ref role="3cqZAo" node="5rfTprTSGyB" resolve="instruction" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3cpWs6" id="5rfTprTSGyR" role="3cqZAp">
-                  <node concept="37vLTw" id="5rfTprTSGyS" role="3cqZAk">
-                    <ref role="3cqZAo" node="5rfTprTSGyJ" resolve="typemap" />
+                  <node concept="2OqwBi" id="5rfTprU8Mkx" role="3cqZAk">
+                    <node concept="37vLTw" id="5rfTprU8Mky" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5rfTprTSGys" resolve="typechecks" />
+                    </node>
+                    <node concept="liA8E" id="5rfTprU8Mkz" role="2OqNvi">
+                      <ref role="37wK5l" to="1fjm:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction)" resolve="get" />
+                      <node concept="37vLTw" id="5rfTprU8Mk$" role="37wK5m">
+                        <ref role="3cqZAo" node="5rfTprTSGyB" resolve="instruction" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
