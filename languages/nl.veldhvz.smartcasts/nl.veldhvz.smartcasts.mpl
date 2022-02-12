@@ -12,7 +12,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="nl.veldhvz.smartcasts" uuid="83b2e915-994d-4a24-9eba-c4dc802c8cd5">
+    <generator alias="main" namespace="nl.veldhvz.smartcasts.generator" uuid="83b2e915-994d-4a24-9eba-c4dc802c8cd5">
       <models>
         <modelRoot contentPath="${module}/generator" type="default">
           <sourceRoot location="templates" />
@@ -58,8 +58,8 @@
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-        <module reference="83b2e915-994d-4a24-9eba-c4dc802c8cd5(nl.veldhvz.smartcasts)" version="0" />
         <module reference="c45dae0d-3002-45a6-9357-a3abf67e30a3(nl.veldhvz.smartcasts)" version="0" />
+        <module reference="83b2e915-994d-4a24-9eba-c4dc802c8cd5(nl.veldhvz.smartcasts.generator)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>

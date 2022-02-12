@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2ae67281-e8f9-43d8-9af3-0e12f2ab7ae2(nl.veldhvz.smartcasts.templates@generator)">
+<model ref="r:2ae67281-e8f9-43d8-9af3-0e12f2ab7ae2(nl.veldhvz.smartcasts.generator.templates@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
@@ -218,7 +218,7 @@
                                       <node concept="2OqwBi" id="5rfTprTX6Kq" role="36biLW">
                                         <node concept="30H73N" id="5rfTprTX6qY" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="5rfTprTX7lr" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="cadi:5rSvAAOkb0X" resolve="variabelDeclaration" />
+                                          <ref role="3Tt5mk" to="cadi:5rSvAAOkb0X" resolve="variableDeclaration" />
                                         </node>
                                       </node>
                                     </node>

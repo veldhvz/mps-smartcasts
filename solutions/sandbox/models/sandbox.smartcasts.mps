@@ -21,10 +21,6 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
-      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
-        <child id="1068498886297" name="rValue" index="37vLTx" />
-        <child id="1068498886295" name="lValue" index="37vLTJ" />
-      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
@@ -54,7 +50,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -179,16 +174,6 @@
                 </node>
                 <node concept="1rzDgZ" id="5rSvAAOlrD1" role="2Oq$k0">
                   <ref role="3yEcTk" node="5CeOzIjDTA9" resolve="param" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="5rfTprU59tj" role="3cqZAp">
-              <node concept="37vLTI" id="5rfTprU5dxS" role="3clFbG">
-                <node concept="37vLTw" id="5rfTprU5dWq" role="37vLTJ">
-                  <ref role="3cqZAo" node="5CeOzIjDTA9" resolve="param" />
-                </node>
-                <node concept="Xl_RD" id="5rfTprU5bDg" role="37vLTx">
-                  <property role="Xl_RC" value="" />
                 </node>
               </node>
             </node>

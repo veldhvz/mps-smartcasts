@@ -5,7 +5,7 @@ the type of any type checks that are done in de scope of the reference.
 This way a variable can be referenced without having to cast it.
 Smartcasts work for normal 'java' types as well as for node-types.
 Here are some examples:
-```
+```java
 public void test(Object param, node<> node) { 
   if (param instanceof Integer && param.intValue() > 0) { 
     param.intValue(); // param is smartcasted
