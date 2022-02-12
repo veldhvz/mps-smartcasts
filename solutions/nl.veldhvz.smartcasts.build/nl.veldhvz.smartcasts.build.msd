@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="smartcasts.build" uuid="b14c2726-ae90-4a7e-ac63-cc77aee6d28c" moduleVersion="0" compileInMPS="true">
+<solution name="nl.veldhvz.smartcasts.build" uuid="b14c2726-ae90-4a7e-ac63-cc77aee6d28c" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -21,7 +21,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
-    <module reference="b14c2726-ae90-4a7e-ac63-cc77aee6d28c(smartcasts.build)" version="0" />
+    <module reference="b14c2726-ae90-4a7e-ac63-cc77aee6d28c(nl.veldhvz.smartcasts.build)" version="0" />
   </dependencyVersions>
 </solution>
 

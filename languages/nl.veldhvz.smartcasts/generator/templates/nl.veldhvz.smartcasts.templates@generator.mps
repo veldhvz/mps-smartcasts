@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2ae67281-e8f9-43d8-9af3-0e12f2ab7ae2(smartcasts.generator.templates@generator)">
+<model ref="r:2ae67281-e8f9-43d8-9af3-0e12f2ab7ae2(nl.veldhvz.smartcasts.templates@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
@@ -8,10 +8,7 @@
   </languages>
   <imports>
     <import index="cadi" ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(smartcasts.structure)" />
-    <import index="vl5q" ref="52b81ac7-93fd-4e9e-b972-4995882da6d4/java:jetbrains.mps.references(jetbrains.mps.baseLanguage.references.runtime/)" />
-    <import index="8kov" ref="r:564046f4-0d85-4d4e-9463-a44226941947(jetbrains.mps.baseLanguage.generator.java.references@generator)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="63o7" ref="r:28a16e1b-c393-4b33-921e-657d49d4a142(jetbrains.mps.baseLanguage.generator.java.references.util)" />
     <import index="bjcj" ref="r:e6c9db89-f681-46ef-a5cc-9a1e8a9e6bcb(smartcasts.behavior)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -221,7 +218,7 @@
                                       <node concept="2OqwBi" id="5rfTprTX6Kq" role="36biLW">
                                         <node concept="30H73N" id="5rfTprTX6qY" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="5rfTprTX7lr" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
+                                          <ref role="3Tt5mk" to="cadi:5rSvAAOkb0X" resolve="variabelDeclaration" />
                                         </node>
                                       </node>
                                     </node>

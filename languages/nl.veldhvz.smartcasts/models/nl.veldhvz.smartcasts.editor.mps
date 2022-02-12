@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:099dd92e-79b3-4797-8b85-a461b4e9676c(smartcasts.editor)">
+<model ref="r:099dd92e-79b3-4797-8b85-a461b4e9676c(nl.veldhvz.smartcasts.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -7,11 +7,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="cadi" ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(smartcasts.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="cadi" ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(nl.veldhvz.smartcasts.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
-    <import index="bjcj" ref="r:e6c9db89-f681-46ef-a5cc-9a1e8a9e6bcb(smartcasts.behavior)" implicit="true" />
+    <import index="bjcj" ref="r:e6c9db89-f681-46ef-a5cc-9a1e8a9e6bcb(nl.veldhvz.smartcasts.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -29,6 +28,9 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
@@ -37,6 +39,7 @@
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -51,6 +54,9 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -75,6 +81,9 @@
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="2722384699544370949" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Placeholder" flags="ng" index="3VyMlK" />
       <concept id="4307758654696938365" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_RefPresentation" flags="ig" index="1WAQ3h" />
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
+      </concept>
       <concept id="8428109087107030357" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_ReferenceScope" flags="ng" index="3XHNnq">
         <reference id="8428109087107339113" name="reference" index="3XGfJA" />
         <child id="4307758654694907855" name="descriptionTextFunction" index="1WZ6hz" />
@@ -107,19 +116,24 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="35H7XdEVX6j">
     <ref role="1XX52x" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     <node concept="1iCGBv" id="35H7XdEVX6D" role="2wV5jI">
-      <ref role="1NtTu8" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
+      <ref role="1NtTu8" to="cadi:5rSvAAOkb0X" resolve="variableDeclaration" />
       <node concept="1sVBvm" id="35H7XdEVX6F" role="1sWHZn">
         <node concept="3F0A7n" id="35H7XdEVX6M" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" to="tpen:hFD0yD_" resolve="VariableName" />
-          <node concept="30gYXW" id="35H7XdEVX6P" role="3F10Kt">
-            <node concept="1iSF2X" id="35H7XdEVX6R" role="VblUZ">
-              <property role="1iTho6" value="D8FFD8" />
+          <node concept="3Xmtl4" id="7jj4HPlxj2l" role="3F10Kt">
+            <node concept="1wgc9g" id="7jj4HPlxj2n" role="3XvnJa">
+              <ref role="1wgcnl" node="7jj4HPlxj27" resolve="SmartCasted" />
             </node>
           </node>
         </node>
@@ -171,7 +185,7 @@
     <ref role="aqKnT" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     <node concept="22hDWj" id="5rfTprTTlYp" role="22hAXT" />
     <node concept="3XHNnq" id="5rfTprTTlYr" role="3ft7WO">
-      <ref role="3XGfJA" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
+      <ref role="3XGfJA" to="cadi:5rSvAAOkb0X" resolve="variableDeclaration" />
       <node concept="1WAQ3h" id="5rfTprTTlZa" role="1WZ6hz">
         <node concept="3clFbS" id="5rfTprTTlZc" role="2VODD2">
           <node concept="3clFbF" id="5rfTprTTm3R" role="3cqZAp">
@@ -185,6 +199,17 @@
     <node concept="3VyMlK" id="5rfTprTTlZ4" role="3ft7WO" />
     <node concept="3VyMlK" id="5rfTprTTlYv" role="3ft7WO" />
     <node concept="3VyMlK" id="5rfTprTTlYz" role="3ft7WO" />
+  </node>
+  <node concept="V5hpn" id="7jj4HPlxiEv">
+    <property role="TrG5h" value="SmartCastStyles" />
+    <node concept="14StLt" id="7jj4HPlxj27" role="V601i">
+      <property role="TrG5h" value="SmartCasted" />
+      <node concept="30gYXW" id="7jj4HPlxj2c" role="3F10Kt">
+        <node concept="1iSF2X" id="7jj4HPlxj2f" role="VblUZ">
+          <property role="1iTho6" value="D8FFD8" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

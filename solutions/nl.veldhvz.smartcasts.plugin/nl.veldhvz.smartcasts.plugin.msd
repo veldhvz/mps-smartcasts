@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="pluginSolution" uuid="bc105a2f-5ddb-414d-92dc-9416bc133ab7" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="nl.veldhvz.smartcasts.plugin" uuid="bc105a2f-5ddb-414d-92dc-9416bc133ab7" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -19,7 +19,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-    <dependency reexport="false">c45dae0d-3002-45a6-9357-a3abf67e30a3(smartcasts)</dependency>
+    <dependency reexport="false">c45dae0d-3002-45a6-9357-a3abf67e30a3(nl.veldhvz.smartcasts)</dependency>
     <dependency reexport="false">66e9008e-0fff-442a-b94e-09ea76bf741a(jetbrains.mps.lang.dataFlow.pluginSolution)</dependency>
   </dependencies>
   <languageVersions>
@@ -56,8 +56,8 @@
     <module reference="66e9008e-0fff-442a-b94e-09ea76bf741a(jetbrains.mps.lang.dataFlow.pluginSolution)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
-    <module reference="bc105a2f-5ddb-414d-92dc-9416bc133ab7(pluginSolution)" version="0" />
-    <module reference="c45dae0d-3002-45a6-9357-a3abf67e30a3(smartcasts)" version="0" />
+    <module reference="c45dae0d-3002-45a6-9357-a3abf67e30a3(nl.veldhvz.smartcasts)" version="0" />
+    <module reference="bc105a2f-5ddb-414d-92dc-9416bc133ab7(nl.veldhvz.smartcasts.plugin)" version="0" />
   </dependencyVersions>
 </solution>
 

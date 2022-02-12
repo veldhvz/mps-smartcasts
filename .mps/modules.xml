@@ -2,9 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/smartcasts/smartcasts.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/SmartCasts.build/SmartCasts.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/pluginSolution/pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/nl.veldhvz.smartcasts/nl.veldhvz.smartcasts.mpl" folder="smartcasts" />
+      <modulePath path="$PROJECT_DIR$/solutions/nl.veldhvz.smartcasts.build/nl.veldhvz.smartcasts.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/nl.veldhvz.smartcasts.plugin/nl.veldhvz.smartcasts.plugin.msd" folder="smartcasts" />
       <modulePath path="$PROJECT_DIR$/solutions/sandbox/sandbox.msd" folder="" />
     </projectModules>
   </component>
