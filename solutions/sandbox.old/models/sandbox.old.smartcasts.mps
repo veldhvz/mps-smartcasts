@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:da8b7c4b-9cd4-49d5-838b-ccfb38d8b6d3(sandbox.smartcasts)">
+<model ref="r:da8b7c4b-9cd4-49d5-838b-ccfb38d8b6d3(sandbox.old.smartcasts)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />

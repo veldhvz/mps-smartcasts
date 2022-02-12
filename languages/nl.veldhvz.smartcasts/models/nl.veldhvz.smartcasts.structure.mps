@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(nl.veldhvz.smartcasts.structure)">
+<model ref="r:cf6d662a-7432-4e3b-be7d-5864282d542c(nl.veldhvz.smartcasts.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
@@ -35,6 +35,10 @@
       </concept>
     </language>
   </registry>
+  <node concept="PlHQZ" id="5rSvAAOiUxN">
+    <property role="EcuMT" value="6266897873947568243" />
+    <property role="TrG5h" value="ITypeCheck" />
+  </node>
   <node concept="1TIwiD" id="35H7XdESSJG">
     <property role="EcuMT" value="3561537873211788268" />
     <property role="TrG5h" value="SmartCastedVariableReference" />
@@ -48,10 +52,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="5rSvAAOiUxN">
-    <property role="EcuMT" value="6266897873947568243" />
-    <property role="TrG5h" value="ITypeCheck" />
   </node>
 </model>
 

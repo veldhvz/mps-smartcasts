@@ -5,7 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/nl.veldhvz.smartcasts/nl.veldhvz.smartcasts.mpl" folder="smartcasts" />
       <modulePath path="$PROJECT_DIR$/solutions/nl.veldhvz.smartcasts.build/nl.veldhvz.smartcasts.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/nl.veldhvz.smartcasts.plugin/nl.veldhvz.smartcasts.plugin.msd" folder="smartcasts" />
-      <modulePath path="$PROJECT_DIR$/solutions/sandbox/sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/sandbox.old/sandbox.old.msd" folder="" />
     </projectModules>
   </component>
 </project>

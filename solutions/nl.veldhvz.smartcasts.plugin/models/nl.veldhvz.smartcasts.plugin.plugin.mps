@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:aab5c867-150f-4029-9711-37cafeeeea76(nl.veldhvz.smartcasts.plugin)">
+<model ref="r:aab5c867-150f-4029-9711-37cafeeeea76(nl.veldhvz.smartcasts.plugin.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
@@ -17,8 +17,8 @@
     <import index="1fjm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework(MPS.Core/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="534n" ref="r:ca699ad5-3754-432e-b8d2-2c1ff1e8bdf3(nl.veldhvz.smartcasts.dataFlow)" />
     <import index="lzd0" ref="r:97aec248-a91c-439e-a7f1-5184e2da6816(jetbrains.mps.lang.dataFlow.pluginSolution.plugin)" />
+    <import index="su3l" ref="r:6eadb4b6-7f33-40d4-996b-b84855d1464b(nl.veldhvz.smartcasts.dataFlow)" />
   </imports>
   <registry>
     <language id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers">
@@ -170,7 +170,7 @@
                   <ref role="ehGHo" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
                 </node>
                 <node concept="3uibUv" id="5rfTprUaspk" role="3rvSg0">
-                  <ref role="3uigEE" to="534n:5rfTprU03us" resolve="TypeCheckState" />
+                  <ref role="3uigEE" to="su3l:5rfTprU03us" resolve="TypeCheckState" />
                 </node>
               </node>
             </node>
@@ -196,7 +196,7 @@
                   <node concept="3clFbF" id="56NpvCqHVcE" role="3cqZAp">
                     <node concept="37vLTI" id="56NpvCqHVcF" role="3clFbG">
                       <node concept="2v6lVJ" id="5GUQLVLhj1T" role="37vLTx">
-                        <ref role="2v6lVI" to="534n:35H7XdESU1Y" resolve="TypeChecks" />
+                        <ref role="2v6lVI" to="su3l:35H7XdESU1Y" resolve="TypeChecks" />
                         <node concept="2OqwBi" id="5GUQLVLhj1U" role="3vVDej">
                           <node concept="2WthIp" id="5GUQLVLhj1V" role="2Oq$k0" />
                           <node concept="3gHZIF" id="5GUQLVLhj1W" role="2OqNvi">

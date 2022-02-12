@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:099dd92e-79b3-4797-8b85-a461b4e9676c(nl.veldhvz.smartcasts.editor)">
+<model ref="r:0149a5d2-9cb3-4b75-85c8-ca2ecb8f6ce3(nl.veldhvz.smartcasts.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -7,11 +7,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="cadi" ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(nl.veldhvz.smartcasts.structure)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="2zx5" ref="r:cf6d662a-7432-4e3b-be7d-5864282d542c(nl.veldhvz.smartcasts.structure)" />
+    <import index="ykvv" ref="r:aed8b1e5-a052-45c1-b903-336a74a95a75(nl.veldhvz.smartcasts.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
-    <import index="bjcj" ref="r:e6c9db89-f681-46ef-a5cc-9a1e8a9e6bcb(nl.veldhvz.smartcasts.behavior)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -123,9 +123,9 @@
     </language>
   </registry>
   <node concept="24kQdi" id="35H7XdEVX6j">
-    <ref role="1XX52x" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
+    <ref role="1XX52x" to="2zx5:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     <node concept="1iCGBv" id="35H7XdEVX6D" role="2wV5jI">
-      <ref role="1NtTu8" to="cadi:5rSvAAOkb0X" resolve="variableDeclaration" />
+      <ref role="1NtTu8" to="2zx5:5rSvAAOkb0X" resolve="variableDeclaration" />
       <node concept="1sVBvm" id="35H7XdEVX6F" role="1sWHZn">
         <node concept="3F0A7n" id="35H7XdEVX6M" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -133,7 +133,7 @@
           <ref role="1k5W1q" to="tpen:hFD0yD_" resolve="VariableName" />
           <node concept="3Xmtl4" id="7jj4HPlxj2l" role="3F10Kt">
             <node concept="1wgc9g" id="7jj4HPlxj2n" role="3XvnJa">
-              <ref role="1wgcnl" node="7jj4HPlxj27" resolve="SmartCasted" />
+              <ref role="1wgcnl" node="7jj4HPlxj27" />
             </node>
           </node>
         </node>
@@ -153,7 +153,7 @@
                   <node concept="2OqwBi" id="5rfTprTZ8iE" role="2Oq$k0">
                     <node concept="pncrf" id="5rfTprTZ83v" role="2Oq$k0" />
                     <node concept="2qgKlT" id="5rfTprTZ8Sc" role="2OqNvi">
-                      <ref role="37wK5l" to="bjcj:5rfTprTR5lf" resolve="getType" />
+                      <ref role="37wK5l" to="ykvv:5rfTprTR5lf" resolve="getType" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="5rfTprTZ9A2" role="2OqNvi">
@@ -171,7 +171,7 @@
                 <node concept="2OqwBi" id="5rfTprU3uzZ" role="3clFbG">
                   <node concept="pncrf" id="5rfTprU3unt" role="2Oq$k0" />
                   <node concept="2qgKlT" id="5rfTprU3v92" role="2OqNvi">
-                    <ref role="37wK5l" to="bjcj:5rfTprU3q6v" resolve="nodeThatDefinesType" />
+                    <ref role="37wK5l" to="ykvv:5rfTprU3q6v" resolve="nodeThatDefinesType" />
                   </node>
                 </node>
               </node>
@@ -182,10 +182,10 @@
     </node>
   </node>
   <node concept="22mcaB" id="5rfTprTTlP7">
-    <ref role="aqKnT" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
+    <ref role="aqKnT" to="2zx5:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     <node concept="22hDWj" id="5rfTprTTlYp" role="22hAXT" />
     <node concept="3XHNnq" id="5rfTprTTlYr" role="3ft7WO">
-      <ref role="3XGfJA" to="cadi:5rSvAAOkb0X" resolve="variableDeclaration" />
+      <ref role="3XGfJA" to="2zx5:5rSvAAOkb0X" resolve="variableDeclaration" />
       <node concept="1WAQ3h" id="5rfTprTTlZa" role="1WZ6hz">
         <node concept="3clFbS" id="5rfTprTTlZc" role="2VODD2">
           <node concept="3clFbF" id="5rfTprTTm3R" role="3cqZAp">

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2ae67281-e8f9-43d8-9af3-0e12f2ab7ae2(nl.veldhvz.smartcasts.templates@generator)">
+<model ref="r:2411daee-7da7-4d95-8385-28ac59e3193c(nl.veldhvz.smartcasts.generator.templates@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="cadi" ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(smartcasts.structure)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="bjcj" ref="r:e6c9db89-f681-46ef-a5cc-9a1e8a9e6bcb(smartcasts.behavior)" />
+    <import index="2zx5" ref="r:cf6d662a-7432-4e3b-be7d-5864282d542c(nl.veldhvz.smartcasts.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="ykvv" ref="r:aed8b1e5-a052-45c1-b903-336a74a95a75(nl.veldhvz.smartcasts.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -136,10 +134,10 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="35H7XdESS6S">
+  <node concept="bUwia" id="6TkHOIgAI5S">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="5rfTprTWCCT" role="3acgRq">
-      <ref role="30HIoZ" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
+      <ref role="30HIoZ" to="2zx5:35H7XdESSJG" resolve="SmartCastedVariableReference" />
       <node concept="1Koe21" id="5rfTprTWCDK" role="1lVwrX">
         <node concept="3clFb_" id="5rfTprTWCE0" role="1Koe22">
           <property role="TrG5h" value="method" />
@@ -172,7 +170,7 @@
                                 <node concept="2OqwBi" id="5rfTprU4D6z" role="33vP2m">
                                   <node concept="30H73N" id="5rfTprU4D6$" role="2Oq$k0" />
                                   <node concept="2qgKlT" id="5rfTprU4D6_" role="2OqNvi">
-                                    <ref role="37wK5l" to="bjcj:5rfTprTR5lf" resolve="getType" />
+                                    <ref role="37wK5l" to="ykvv:5rfTprTR5lf" resolve="getType" />
                                   </node>
                                 </node>
                               </node>
@@ -218,7 +216,7 @@
                                       <node concept="2OqwBi" id="5rfTprTX6Kq" role="36biLW">
                                         <node concept="30H73N" id="5rfTprTX6qY" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="5rfTprTX7lr" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="cadi:5rSvAAOkb0X" resolve="variabelDeclaration" />
+                                          <ref role="3Tt5mk" to="2zx5:5rSvAAOkb0X" resolve="variableDeclaration" />
                                         </node>
                                       </node>
                                     </node>

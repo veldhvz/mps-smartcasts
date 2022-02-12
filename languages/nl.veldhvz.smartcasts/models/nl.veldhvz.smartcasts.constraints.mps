@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d681d35c-6adf-4518-80d6-9b9d775ed3f2(nl.veldhvz.smartcasts.constraints)">
+<model ref="r:b290d86c-c054-4176-9c74-312e06b246cf(nl.veldhvz.smartcasts.constraints)">
   <persistence version="9" />
   <languages>
     <use id="5dae8159-ab99-46bb-a40d-0cee30ee7018" name="jetbrains.mps.lang.constraints.rules.kinds" version="0" />
@@ -11,17 +11,16 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7" name="jetbrains.mps.lang.context" version="0" />
     <use id="ad93155d-79b2-4759-b10c-55123e763903" name="jetbrains.mps.lang.messages" version="0" />
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="bjcj" ref="r:e6c9db89-f681-46ef-a5cc-9a1e8a9e6bcb(nl.veldhvz.smartcasts.behavior)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="cadi" ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(nl.veldhvz.smartcasts.structure)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="2zx5" ref="r:cf6d662a-7432-4e3b-be7d-5864282d542c(nl.veldhvz.smartcasts.structure)" />
+    <import index="ykvv" ref="r:aed8b1e5-a052-45c1-b903-336a74a95a75(nl.veldhvz.smartcasts.behavior)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -168,9 +167,9 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="35H7XdEVX7j">
-    <ref role="1M2myG" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
+    <ref role="1M2myG" to="2zx5:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     <node concept="1N5Pfh" id="35H7XdEVX7k" role="1Mr941">
-      <ref role="1N5Vy1" to="cadi:5rSvAAOkb0X" resolve="variableDeclaration" />
+      <ref role="1N5Vy1" to="2zx5:5rSvAAOkb0X" resolve="variableDeclaration" />
       <node concept="3dgokm" id="35H7XdEVXiq" role="1N6uqs">
         <node concept="3clFbS" id="35H7XdEVXir" role="2VODD2">
           <node concept="3cpWs8" id="35H7XdEW1Ra" role="3cqZAp">
@@ -266,12 +265,12 @@
               <property role="TrG5h" value="flow" />
               <property role="3TUv4t" value="true" />
               <node concept="3uibUv" id="2H0nDnYnWCc" role="1tU5fm">
-                <ref role="3uigEE" to="bjcj:2H0nDnYlAeD" resolve="TypeCheckDataFlow" />
+                <ref role="3uigEE" to="ykvv:2H0nDnYlAeD" resolve="TypeCheckDataFlow" />
               </node>
               <node concept="2ShNRf" id="2H0nDnYnWZz" role="33vP2m">
                 <node concept="1pGfFk" id="2H0nDnYnWZ$" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="bjcj:2H0nDnYlC3U" resolve="TypeCheckDataFlow" />
+                  <ref role="37wK5l" to="ykvv:2H0nDnYlC3U" resolve="TypeCheckDataFlow" />
                   <node concept="37vLTw" id="2H0nDnYonyp" role="37wK5m">
                     <ref role="3cqZAo" node="3hxoHxhF09z" resolve="flowCtxNode" />
                   </node>
@@ -317,7 +316,7 @@
                                   <ref role="3cqZAo" node="2H0nDnYnWZy" resolve="flow" />
                                 </node>
                                 <node concept="liA8E" id="2H0nDnYmXMM" role="2OqNvi">
-                                  <ref role="37wK5l" to="bjcj:2H0nDnYlEbO" resolve="checkedType" />
+                                  <ref role="37wK5l" to="ykvv:2H0nDnYlEbO" resolve="checkedType" />
                                   <node concept="Jnkvi" id="2H0nDnYmXMN" role="37wK5m">
                                     <ref role="1M0zk5" node="35H7XdEW5BB" resolve="varDecl" />
                                   </node>

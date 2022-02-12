@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:49308a59-154d-4b53-81a4-537f671d833b(nl.veldhvz.smartcasts.typesystem)">
+<model ref="r:de3489d9-f6de-4d2b-8ddf-75755b11cb92(nl.veldhvz.smartcasts.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
-    <import index="tpem" ref="r:00000000-0000-4000-0000-011c895902c2(jetbrains.mps.baseLanguage.dataFlow)" />
-    <import index="mu20" ref="r:fc94574f-a075-45e6-9927-48e7e87153e6(jetbrains.mps.analyzers.runtime.framework)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="534n" ref="r:ca699ad5-3754-432e-b8d2-2c1ff1e8bdf3(nl.veldhvz.smartcasts.dataFlow)" />
-    <import index="1fjm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework(MPS.Core/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
-    <import index="bjcj" ref="r:e6c9db89-f681-46ef-a5cc-9a1e8a9e6bcb(smartcasts.behavior)" />
-    <import index="cadi" ref="r:950587af-1c88-4c91-9d1c-64d15fc00069(nl.veldhvz.smartcasts.structure)" implicit="true" />
+    <import index="2zx5" ref="r:cf6d662a-7432-4e3b-be7d-5864282d542c(nl.veldhvz.smartcasts.structure)" />
+    <import index="ykvv" ref="r:aed8b1e5-a052-45c1-b903-336a74a95a75(nl.veldhvz.smartcasts.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -123,6 +114,38 @@
       </concept>
     </language>
   </registry>
+  <node concept="18kY7G" id="5rfTprU1YZp">
+    <property role="TrG5h" value="check_SmartCastedVariableReference" />
+    <node concept="3clFbS" id="5rfTprU1YZq" role="18ibNy">
+      <node concept="3clFbJ" id="5rfTprU1Z8N" role="3cqZAp">
+        <node concept="3clFbC" id="5rfTprU20zI" role="3clFbw">
+          <node concept="10Nm6u" id="5rfTprU20Eb" role="3uHU7w" />
+          <node concept="2OqwBi" id="5rfTprU1ZlT" role="3uHU7B">
+            <node concept="1YBJjd" id="5rfTprU1Z8Z" role="2Oq$k0">
+              <ref role="1YBMHb" node="5rfTprU1Z8E" resolve="smartCastedVariableReference" />
+            </node>
+            <node concept="2qgKlT" id="5rfTprU20iF" role="2OqNvi">
+              <ref role="37wK5l" to="ykvv:5rfTprTR5lf" resolve="getType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5rfTprU1Z8P" role="3clFbx">
+          <node concept="2MkqsV" id="5rfTprU20ED" role="3cqZAp">
+            <node concept="Xl_RD" id="5rfTprU20EP" role="2MkJ7o">
+              <property role="Xl_RC" value="Variable cannot be smartly casted" />
+            </node>
+            <node concept="1YBJjd" id="5rfTprU20F$" role="1urrMF">
+              <ref role="1YBMHb" node="5rfTprU1Z8E" resolve="smartCastedVariableReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5rfTprU1Z8E" role="1YuTPh">
+      <property role="TrG5h" value="smartCastedVariableReference" />
+      <ref role="1YaFvo" to="2zx5:35H7XdESSJG" resolve="SmartCastedVariableReference" />
+    </node>
+  </node>
   <node concept="1YbPZF" id="5rfTprTKZ8R">
     <property role="TrG5h" value="typeof_SmartCastedVariableReference" />
     <node concept="3clFbS" id="5rfTprTKZ8S" role="18ibNy">
@@ -137,7 +160,7 @@
               <ref role="1YBMHb" node="5rfTprTKZ8U" resolve="smartCastedVariableReference" />
             </node>
             <node concept="2qgKlT" id="5rfTprTRX7L" role="2OqNvi">
-              <ref role="37wK5l" to="bjcj:5rfTprTR5lf" resolve="getType" />
+              <ref role="37wK5l" to="ykvv:5rfTprTR5lf" resolve="getType" />
             </node>
           </node>
         </node>
@@ -175,7 +198,7 @@
                       <ref role="1YBMHb" node="5rfTprTKZ8U" resolve="smartCastedVariableReference" />
                     </node>
                     <node concept="3TrEf2" id="5rfTprTS5Y3" role="2OqNvi">
-                      <ref role="3Tt5mk" to="cadi:5rSvAAOkb0X" resolve="variableDeclaration" />
+                      <ref role="3Tt5mk" to="2zx5:5rSvAAOkb0X" resolve="variableDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -194,7 +217,7 @@
     </node>
     <node concept="1YaCAy" id="5rfTprTKZ8U" role="1YuTPh">
       <property role="TrG5h" value="smartCastedVariableReference" />
-      <ref role="1YaFvo" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
+      <ref role="1YaFvo" to="2zx5:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     </node>
     <node concept="bXqS6" id="5rfTprTKZif" role="ujSXK">
       <node concept="3clFbS" id="5rfTprTKZig" role="2VODD2">
@@ -204,38 +227,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="18kY7G" id="5rfTprU1YZp">
-    <property role="TrG5h" value="check_SmartCastedVariableReference" />
-    <node concept="3clFbS" id="5rfTprU1YZq" role="18ibNy">
-      <node concept="3clFbJ" id="5rfTprU1Z8N" role="3cqZAp">
-        <node concept="3clFbC" id="5rfTprU20zI" role="3clFbw">
-          <node concept="10Nm6u" id="5rfTprU20Eb" role="3uHU7w" />
-          <node concept="2OqwBi" id="5rfTprU1ZlT" role="3uHU7B">
-            <node concept="1YBJjd" id="5rfTprU1Z8Z" role="2Oq$k0">
-              <ref role="1YBMHb" node="5rfTprU1Z8E" resolve="smartCastedVariableReference" />
-            </node>
-            <node concept="2qgKlT" id="5rfTprU20iF" role="2OqNvi">
-              <ref role="37wK5l" to="bjcj:5rfTprTR5lf" resolve="getType" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="5rfTprU1Z8P" role="3clFbx">
-          <node concept="2MkqsV" id="5rfTprU20ED" role="3cqZAp">
-            <node concept="Xl_RD" id="5rfTprU20EP" role="2MkJ7o">
-              <property role="Xl_RC" value="Variable cannot be smartly casted" />
-            </node>
-            <node concept="1YBJjd" id="5rfTprU20F$" role="1urrMF">
-              <ref role="1YBMHb" node="5rfTprU1Z8E" resolve="smartCastedVariableReference" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5rfTprU1Z8E" role="1YuTPh">
-      <property role="TrG5h" value="smartCastedVariableReference" />
-      <ref role="1YaFvo" to="cadi:35H7XdESSJG" resolve="SmartCastedVariableReference" />
     </node>
   </node>
 </model>
