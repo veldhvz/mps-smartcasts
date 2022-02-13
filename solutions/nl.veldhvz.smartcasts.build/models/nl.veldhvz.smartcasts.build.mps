@@ -35,10 +35,6 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
-      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
-        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
-      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
@@ -161,16 +157,9 @@
       </node>
     </node>
     <node concept="1l3spV" id="5rfTprUa0XS" role="1l3spN">
-      <node concept="3981dG" id="5rfTprUa0XT" role="39821P">
-        <node concept="m$_wl" id="HoCUFDqzoF" role="39821P">
-          <ref role="m_rDy" node="5rfTprUa0XF" resolve="smartcasts" />
-          <node concept="pUk6x" id="HoCUFDqzoJ" role="pUk7w" />
-        </node>
-        <node concept="3_J27D" id="5rfTprUa0XU" role="Nbhlr">
-          <node concept="3Mxwew" id="5rfTprUa0XV" role="3MwsjC">
-            <property role="3MwjfP" value="nl.veldhvz.smartcasts.zip" />
-          </node>
-        </node>
+      <node concept="m$_wl" id="HoCUFDqzoF" role="39821P">
+        <ref role="m_rDy" node="5rfTprUa0XF" resolve="smartcasts" />
+        <node concept="pUk6x" id="HoCUFDqzoJ" role="pUk7w" />
       </node>
     </node>
     <node concept="m$_wf" id="5rfTprUa0XF" role="3989C9">
